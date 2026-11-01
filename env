@@ -1,0 +1,5 @@
+PORT=3000
+BOT_UUID=399bfdc8
+ADMIN_PASSWORD=ここに推測されにくい長いパスワードを設定
+UPSTREAM_BASE_URL=https://gpt-bot.userlocal.jp
+DATA_DIR=.data
