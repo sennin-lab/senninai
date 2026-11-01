@@ -278,18 +278,23 @@ function extractAnswer(data) {
     data.answer,
     data.response,
     data.reply,
-    data.message,
     data.content,
     data.text,
     data.result,
     data.output,
+
+    // UserLocalの実際のレスポンス形式
+    data.message?.content,
+
+    // その他のレスポンス形式への対応
     data.choices?.[0]?.message?.content,
     data.choices?.[0]?.text,
     data.data?.answer,
     data.data?.response,
-    data.data?.message,
+    data.data?.reply,
     data.data?.content,
-    data.data?.text
+    data.data?.text,
+    data.data?.message?.content
   ];
 
   for (const candidate of candidates) {
